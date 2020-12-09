@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <a href="#default"><img src="assets/shinee_website_logo.png" class="logo"></a>
+        <div class="header-right">
+            <a href="index.html">Home</a>
+            <a href="learn.html">Learn</a>
+            <a class="active" href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <form action="contact_mail.php" id="frmContact" method="post">
+        <div class="contact-img">
+            <img src="assets/img-placeholder.png">
+        </div>
+
+        <div id="mail-status"></div>
+        <div class="contact-row column-right">
+            <label style="padding-top: 20px;">Name</label> <span id="userName-info" class="info"></span><br /> <input type="text" name="userName" id="userName" class="demoInputBox">
+        </div>
+        <div class="contact-row column-right">
+            <label>Email</label> <span id="userEmail-info" class="info"></span><br />
+            <input type="text" name="userEmail" id="userEmail" class="demoInputBox">
+        </div>
+
+        <div>
+            <label>Message</label> <span id="content-info" class="info"></span><br />
+            <textarea name="content" id="content" class="demoInputBox" rows="3"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Send" class="btnAction" />
+        </div>
+    </form>
+    <div id="loader-icon" style="display: none;">
+        <img src="LoaderIcon.gif" />
+    </div>
+
+
+    <div class="footer">
+        <footer>
+            <p>Amaree McNeil</p>
+            <p>All Rights Reserved</p>
+            <p>Nov. 2020</p>
+        </footer>
+    </div>
+</body></html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/myScript.js"></script>
+    <script src="https://kit.fontawesome.com/1d50652dcd.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="header">
+        <a href="#default"><img src="assets/shinee_website_logo.png" class="logo"></a>
+        <div class="header-right">
+            <a class="active" href="#home">Home</a>
+            <a href="learn.html">Learn</a>
+            <a href="#content">Contact</a>
+        </div>
+    </div>
+
+
+
+    <div class="main">
+
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="img-placeholder.png" style="width:100%">
+
+                <div class="text">Caption Text</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="img-placeholder.png" style="width:100%">
+                <div class="text">Caption Two</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="img-placeholder.png" style="width:100%">
+                <div class="text">Caption Three</div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <h3>Subtitle</h3>
+
+        <p>Hello, this website was made to inform anyone about the group, Shinee. Shinee is one of my favorite K-Pop groups, so I decided to use them as the inspiration and purpose of this website.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, ex, consequuntur. Officiis aspernatur, nulla error voluptatum voluptate dolores labore, ad cum. Molestias dolorum ea quia animi dolorem quidem dicta explicabo? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis ducimus ut, natus cupiditate voluptates repudiandae harum facere rerum officiis quo corporis in libero explicabo mollitia quisquam. Temporibus voluptatem, ipsam quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, atque, hic! Impedit dignissimos, labore eum culpa nulla quibusdam debitis doloribus corporis? Aperiam minus qui quia temporibus repellendus quam nostrum tempora. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam ut doloremque modi cumque aperiam, nisi quae cupiditate esse possimus quod fugiat, laborum facere, temporibus explicabo reprehenderit deserunt quis totam excepturi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure totam numquam ipsum neque officia porro quae ab beatae, aperiam unde vitae sint ipsa libero fugiat molestiae exercitationem laboriosam, non dicta.</p>
+
+        
+    </div>
+
+    <div class="footer">
+        <footer>
+            <p>Amaree McNeil</p> 
+            <p>All Rights Reserved</p> 
+            <p>Nov. 2020</p> 
+            <div class="footer-icons">
+                <i a href="https://www.linkedin.com/in/amareemcneil" class="fab fa-linkedin" style="font-size: 18px; color: cadetblue;"></i>
+                <i class="fab fa-youtube" style="font-size: 18px; color: cadetblue;"></i>
+                <i class="fab fa-instagram" style="font-size: 18px; color: cadetblue;"></i>
+                <i class="fab fa-wordpress-simple" style="font-size: 18px; color: cadetblue;"></i>
+                <i class="fab fa-spotify" style="font-size: 18px; color: cadetblue;"></i>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+</body></html>
