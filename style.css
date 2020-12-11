@@ -61,6 +61,7 @@ body {
 
 footer {
     background-color: #94e4d4;
+    padding: 1em;
     height: 5;
     width: 100%;
     bottom: 0;
@@ -76,10 +77,22 @@ footer p {
     line-height: 0.5em;
 }
 
-div.footer-icons {
+.footer-icons {
     text-align: center;
+    width: 100%;
     word-spacing: 5px;
 }
+
+.footer-icons a {
+    font-size: 18px;
+    color: cadetblue;
+    text-decoration: none;
+}
+
+.footer-icons a:hover {
+    cursor: pointer
+}
+
 
 .main a:link {
     color: #3B9A9C;
@@ -305,17 +318,4 @@ body {
     height: ;
 } */
 
-/* Style all font awesome icons */
 
-.fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-} 
-
-/* Add a hover effect if you want */
-.fa:hover {
-    opacity: 0.7;
-}
