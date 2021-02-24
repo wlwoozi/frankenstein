@@ -3,6 +3,10 @@
     overflow: hidden;
     background-color: #88D8C0;
     padding: 5px 5px;
+    bottom: -68px;
+    margin-top: -9px;
+    margin-right: -9px;
+    margin-left: -9px;
 }
 
 /* Style the header links */
@@ -68,6 +72,8 @@ footer {
     width: 100%;
     left: -10px;
     position: static;
+    margin-left: -9px;
+    right: 8pt;
 }
 
 footer p {
@@ -338,5 +344,3 @@ body {
     width: ;
     height: ;
 } */
-
-
