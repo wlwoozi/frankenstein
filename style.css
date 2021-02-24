@@ -316,6 +316,17 @@ body {
     display: inline-block;
     width: 48%;
 }
+
+.button-next {
+    float: right;
+    text-decoration: none;
+    
+    padding: 8px 16px;
+    background-color: #f1f1f1;
+    color: black;
+    border-radius: 50%;
+
+}
 @media all and (max-width: 550px) {
     .contact-row {
         display: block;
